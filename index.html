@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Adrenaline Buzz Club</title>
+        <link href="css/css.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/breadcrumbs.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="javaScript/jquery.breadcrumbs-generator.js"></script>
+        <script>
+            $(function() {
+              $('#breadcrumbs').breadcrumbsGenerator();
+            });
+            </script>
+    </head>
+    <body>
+        <header>
+            <nav id="navigation">
+                <ul>
+                    <a href="index.html"><li><div id="logo"><p style="margin-top:2px">ABC</p></div></li></a>
+                    <li class="mainnav"><a href="service.html">Service</a></li>
+                    <li class="mainnav"><a href="about-us.html">About us</a></li>
+                    <li class="mainnav"><a href="contact-us.html">Contact us</a></li>
+                    <li style="float:right" class="register"><a href="register.html">Register Now!</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="content1">
+                <div id="introduction">
+               <h1>Adrenaline Buzz Club</h1>
+               <p>It is our aim to keep everyone healthy！</p> 
+               <a href="about us.html"><input type="button" class="index-button" value="learn more..."></a>
+                </div>
+            </div>
+            <div class="content2">
+                <h1>ANAEROBIC TRAINING</h1>
+                <a href="anaerobic training.html"><input type="button" class="index-button" value="learn more..."></a>
+            </div>
+            <div class="content3">
+                <h1>OUR FACILITIES</h1>
+                <a href="facilities.html"><input type="button" class="index-button" value="learn more..."></a>
+            </div>
+        </div>
+
+        <!--sitemap-->
+    <ol id="breadcrumbs"></ol>
+    <hr>
+    <nav id="sitemaps">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+            <ul>
+              <li>
+                <a href="service.html">Service</a>
+                <ul>
+                  <li><a href="facilities.html">Our Facilities</a></li>
+                  <li><a href="anaerobic-training.html">Anerobic Training</a></li>
+                  <li><a href="cardio-training.html">Cardio Training</a></li>
+                </ul>
+              </li>
+              <li><a href="about-us.html">About us</a></li>
+              <li>
+                <a href="contact-us.html">Contact us</a>
+              </li>
+              <li>
+                  <a href="register.html">Register</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </nav>
+    
+        <footer>
+            <nav>
+                <ul>
+                    <li>&copy;2020 Yuliang Lei</li>
+                    <li style="float: right"><a href="#"><u>Privacy</u></a></li>
+                    <li style="float: right"><a href="sitemap.html"><u>Site map</u></a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register - Adrenaline Buzz Club</title>
+        <link href="css/css.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/breadcrumbs.css">
+        <script tpye='text/javascript' src="javaScript/register.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="javaScript/jquery.breadcrumbs-generator.js"></script>
+        <script>
+            $(function() {
+              $('#breadcrumbs').breadcrumbsGenerator();
+            });
+            </script>
+    </head>
+    <body>
+      <header>
+        <nav id="navigation">
+            <ul>
+                <a href="index.html"><li><div id="logo"><p style="margin-top:2px">ABC</p></div></li></a>
+                <li class="mainnav"><a href="service.html">Service</a></li>
+                <li class="mainnav"><a href="about-us.html">About us</a></li>
+                <li class="mainnav"><a href="contact-us.html">Contact us</a></li>
+                <li style="float:right" class="register"><a href="register.html">Register Now!</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="register-content">
+        <h1 style="text-align: center;margin-top: 10px;">Join Our Membership Now!</h1>
+        <form id="registration_form" onsubmit="return checkForm()" method="post">
+            <div><span class="label">Firstname:</span>
+                <input name="firstname" type="text"  id="firstname"/></div>
+            <div class="register-error" id="firstnameError">Please input your firstname</div>
+                  
+              <div><span class="label">Secondname:</span>
+                <input name="secondname" type="text"  id="secondname"/></div>
+            <div class="register-error" id="secondnameError">Please input your secondname</div>
+                  
+              <div><span class="label">Age:</span>
+                <input name="age" type="text"  id="age"/></div>
+            <div class="register-error" id="ageError">Please input your age (Must be 16 years and above)</div>
+                  
+              <div><span class="label">Address:</span>
+                <textarea name="Address" cols="50" rows="3" id="address"></textarea></div>
+                
+              <div><span class="label">Email:</span>
+                <input name="email" type="text" id="email"/></div>
+            <div class="register-error" id="emailError">Please input a valid email</div>
+                  
+            <div id="referral"><span class="label">Referral:</span>
+               <input name="referral" type="radio" id="referralYes"/>Yes   
+               <input name="referral" type="radio" id="referralNo" />No        
+            </div>
+            <div class="register-error" id="referralError">Please choose one option</div>
+              
+              <div><span class="label">MembershipType:</span>
+                  <select name="membership" id="membership">
+                  <option>-----</option>
+                  <option>Family</option>
+                  <option>Individual</option>
+                  </select>
+              </div>
+              <div class="register-error" id="membershipError">Please choose an membership type</div>
+           
+              
+              <div><span class="label">Duration:</span>
+                  <select name="duration" id="duration">
+                  <option>-----</option>
+                  <option>Ongoing(month to month)</option>
+                  <option>3 months</option>
+                  <option>6 months or yearly</option>
+                  </select>
+              </div>
+              <div class="register-error" id="durationError">Please choose a duration</div>
+          
+              <input class="submit" type="submit" value="Submit"/>
+          
+              </form>
+               <!--Calculator-->
+               <div id="calculator">
+               <h2>Membership Fee Calculator</h2>
+               <p style="color:red">*Get different discounts by entering age, referral, membership type and number of members.</p>
+                <div><span class="label">Number of Members:</span>
+                    <input name="numMembers" type="number" id="numMembers">
+                </div>
+                
+
+                <div><span class="label">Fee: $</span>
+                    <input type="number s" id="fee">/per member
+                </div>
+
+                <input class="submit" type="button" value="Calculator" onclick="calculator()">
+                </div>   
+              
+    </div>
+
+    <!--sitemap-->
+    <ol id="breadcrumbs"></ol>
+    <hr>
+    <nav id="sitemaps">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+            <ul>
+              <li>
+                <a href="service.html">Service</a>
+                <ul>
+                  <li><a href="facilities.html">Our Facilities</a></li>
+                  <li><a href="anaerobic-training.html">Anerobic Training</a></li>
+                  <li><a href="cardio-training.html">Cardio Training</a></li>
+                </ul>
+              </li>
+              <li><a href="about-us.html">About us</a></li>
+              <li>
+                <a href="contact-us.html">Contact us</a>
+              </li>
+              <li>
+                  <a href="register.html">Register</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </nav>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>&copy;2020 Yuliang Lei</li>
+                    <li style="float: right"><a href="#"><u>Privacy</u></a></li>
+                    <li style="float: right"><a href="sitemap.html"><u>Site map</u></a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>

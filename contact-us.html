@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact us - Adrenaline Buzz Club</title>
+        <link href="css/css.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/breadcrumbs.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="javaScript/jquery.breadcrumbs-generator.js"></script>
+        <script>
+            $(function() {
+            $('#breadcrumbs').breadcrumbsGenerator();
+        });
+        </script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <!-- include the plugin -->
+                <script src="plugins/jquery.validate.js"></script>
+                <!-- write the JS code to play with the plugin -->
+                <script src="javaScript/form-validation.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav id="navigation">
+                <ul>
+                    <a href="index.html"><li><div id="logo"><p style="margin-top:2px">ABC</p></div></li></a>
+                    <li class="mainnav"><a href="service.html">Service</a></li>
+                    <li class="mainnav"><a href="about-us.html">About us</a></li>
+                    <li class="mainnav"><a href="contact-us.html">Contact us</a></li>
+                    <li style="float:right" class="register"><a href="register.html">Register Now!</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="contact-us">
+            <h1>CONTACT US</h1>
+            <form action="mailto:admin@abcgym.com.au" method="post" onsubmit="return checkForm()" id="contact" name="contact">
+                <li> <label for="firstname">Firstname:</label> 
+                    <input type="text" name="firstname" id="contact-firstname"/></li>
+               
+               <li> <label for="lastname">Lastname:</label>  
+                   <input type="text" name="lastname" id="lastname"/></li>
+
+               <li><label for="email">Email:</label>
+                   <input type="email" name="email" id="contact-email"/></li>
+
+               <li><label for="Phone">Phone:</label>
+                   <input type="text" name="phone" id="phone" /></li>
+
+               <li><label for="Comment">Comment:</label>
+                   <textarea name="message" cols="100" rows="10" id="comment"></textarea></li>
+
+               <input type="submit" class="submit" value="Submit"> 
+                </form>
+        </div>
+
+        <!--sitemap-->
+    <ol id="breadcrumbs"></ol>
+    <hr>
+    <nav id="sitemaps">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+            <ul>
+              <li>
+                <a href="service.html">Service</a>
+                <ul>
+                  <li><a href="facilities.html">Our Facilities</a></li>
+                  <li><a href="anaerobic-training.html">Anerobic Training</a></li>
+                  <li><a href="cardio-training.html">Cardio Training</a></li>
+                </ul>
+              </li>
+              <li><a href="about-us.html">About us</a></li>
+              <li>
+                <a href="contact-us.html">Contact us</a>
+              </li>
+              <li>
+                  <a href="register.html">Register</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </nav>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>&copy;2020 Yuliang Lei</li>
+                    <li style="float: right"><a href="#"><u>Privacy</u></a></li>
+                    <li style="float: right"><a href="sitemap.html"><u>Site map</u></a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
